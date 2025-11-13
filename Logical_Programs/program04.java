@@ -1,6 +1,6 @@
 // Better approch
 
-class program20
+class program04
 {
     public static void Display()                
     {
