@@ -1,6 +1,6 @@
 // Wrost approch
 
-class program18
+class program2
 {
     public static void main(String A[])
     {
