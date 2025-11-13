@@ -1,16 +1,22 @@
-#include<stdio.h>
+// Best approch
 
-void Display()                // It should be int main
+class Marvellous
 {
-    printf("Jay Ganesh...\n");
-    printf("Jay Ganesh...\n");
-    printf("Jay Ganesh...\n");
-    printf("Jay Ganesh...\n");
+    public void Display()                
+    {
+        System.out.println("Jay Ganesh...");
+        System.out.println("Jay Ganesh...");
+        System.out.println("Jay Ganesh...");
+        System.out.println("Jay Ganesh...");
+    }
 }
 
-int main()
+class program06
 {
-    Display();
+    public static void main(String A[])
+    {
+        Marvellous mobj = new Marvellous();
 
-    return 0;
+        mobj.Display();
+    }
 }
