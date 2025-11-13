@@ -11,7 +11,7 @@ class Marvellous
     }
 }
 
-class program21
+class program05
 {
     public static void main(String A[])
     {
