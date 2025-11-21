@@ -1,6 +1,6 @@
 import java.sql.*;
 
-class MarvellousJDBC
+class JDBCConectivity
 {
     public static void main(String A[])
     {
