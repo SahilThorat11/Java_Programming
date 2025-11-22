@@ -20,7 +20,7 @@ class Pattern
 
         for(i = 1; i <= iRow; i++)
         {
-            for(j = iCol; j >= 1; j--)
+            for(j = 1; j <= iCol; j++)
             {
                 System.out.print(i + "\t");
             }
