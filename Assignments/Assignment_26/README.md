@@ -39,4 +39,4 @@ javac filename.java
 
 java filename
 
-└── Assignment └── Assignment_26 ├── Program26_1.c ├── Program26_2.c ├── Program26_3.c ├── Program26_4.c ├── Program26_5.c └── README.md
+└── Assignment └── Assignment_26 ├── Program26_1.java ├── Program26_2.java ├── Program26_3.java ├── Program26_4.java ├── Program26_5.java └── README.md
