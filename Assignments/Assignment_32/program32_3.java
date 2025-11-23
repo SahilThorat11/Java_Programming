@@ -11,7 +11,7 @@ import java.util.Scanner;
 //  Date          : 23/11/2025
 //
 ////////////////////////////////////////////////////////////////////////////////
-
+ 
 class Pattern
 {
     public void Display(int iRow, int iCol)
