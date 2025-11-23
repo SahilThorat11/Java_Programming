@@ -13,7 +13,7 @@ import java.util.Scanner;
 ////////////////////////////////////////////////////////////////////////////////
 
 class Pattern
-{
+{  
     public void Display(int iRow, int iCol)
     {
         int i = 0, j = 0; 
