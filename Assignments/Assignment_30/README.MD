@@ -1,52 +1,53 @@
 # Assignment 30 :
-This folder contains problems related to Pattern printing in which input is taken from user as a Integer, problems are:-
 
-1. Accept number from user and display below pattern,
+    This folder contains problems related to Pattern printing in which input is taken from user as a Integer, problems are:-
 
-  Input  : iRow = 4   iCol = 4
+        1. Accept number from user and display below pattern,
 
-  Output :    *       #       #       #
-              *       *       #       #
-              *       *       *       #
-              *       *       *       *
+              Input  : iRow = 4   iCol = 4
 
-2. Accept number from user and display below pattern,
+              Output :    *       #       #       #
+                          *       *       #       #
+                          *       *       *       #
+                          *       *       *       *
 
-  Input  : iRow = 4   iCol = 4
+        2. Accept number from user and display below pattern,
 
-  Output :    *       *       *       *
-              *       *       *       #
-              *       *       #       #
-              *       #       #       #
+              Input  : iRow = 4   iCol = 4
 
-3. Accept number from user and display below pattern,
+              Output :    *       *       *       *
+                          *       *       *       #
+                          *       *       #       #
+                          *       #       #       #
 
-  Input  : iRow = 5   iCol = 5
+        3. Accept number from user and display below pattern,
 
-  Output :    $       *       *       *       *
-              *       $       *       *       *
-              *       *       $       *       *
-              *       *       *       $       *
-              *       *       *       *       $
+              Input  : iRow = 5   iCol = 5
 
-4. Accept number from user and display below pattern,
+              Output :    $       *       *       *       *
+                          *       $       *       *       *
+                          *       *       $       *       *
+                          *       *       *       $       *
+                          *       *       *       *       $
 
-  Input  : iRow = 5   iCol = 5
+        4. Accept number from user and display below pattern,
 
-  Output :    *       *       *       *       *
-              *       @       @       @       *
-              *       @       @       @       *
-              *       @       @       @       *
-              *       *       *       *       *
+              Input  : iRow = 5   iCol = 5
 
-5. Accept number from user and display below pattern,
+              Output :    *       *       *       *       *
+                          *       @       @       @       *
+                          *       @       @       @       *
+                          *       @       @       @       *
+                          *       *       *       *       *
 
-  Input  : iRow = 5   iCol = 5
+        5. Accept number from user and display below pattern,
 
-  Output :    1       2       3       4
-              1       *       *       4
-              1       *       *       4
-              1       2       3       4
+              Input  : iRow = 5   iCol = 5
+
+              Output :    1       2       3       4
+                          1       *       *       4
+                          1       *       *       4
+                          1       2       3       4
 
                               
 Commands used to execute these codes are:-
