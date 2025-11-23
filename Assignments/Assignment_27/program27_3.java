@@ -3,8 +3,8 @@ import java.util.Scanner;
 ////////////////////////////////////////////////////////////////////////////////
 //
 //  Function Name : Pattern
-//  Description   : Accepts a number from user and displays first # symbol then 
-//                  number and then * Symbol in Accending order.     
+//  Description   : Accept two numbers from user Row and Columns and print given 
+//                  pattern on screen.
 //  Input         : Integer, Integer
 //  Output        : Void
 //  Author        : Sahil Rajaram Thorat
@@ -58,7 +58,7 @@ class program27_3
 //
 //  Testcases succesfully handle by the application
 //
-//  Input  : iRow = 5   iCol = 3
+//  Input  : iRow = 3   iCol = 5
 //
 //  Output :    5   4   3   2   1
 //              5   4   3   2   1
