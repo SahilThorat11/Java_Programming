@@ -1,11 +1,18 @@
-Assignment 20 :
-This folder contains warmup codes which are:-
+# Assignment 20 :
 
-1. program to find sum of all even number up to N.
-2. program to print number from N down to 1 reverse order.
-3. program to check whether a number is a perfect or not.
-4. program to count total number of factors of a given number.
-5. program to find the Smallest digit in a given number.
+    This folder contains warmup codes which are:-
+
+            1. program to find sum of all even number up to N.
+
+            2. program to print number from N down to 1 reverse order.
+
+            3. program to check whether a number is a perfect or not.
+
+            4. program to count total number of factors of a given number.
+            
+            5. program to find the Smallest digit in a given number.
+
+
 Commands used to execute these codes:-
 
 javac FileName.java
