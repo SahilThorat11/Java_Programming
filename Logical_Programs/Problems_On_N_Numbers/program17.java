@@ -52,7 +52,7 @@ class ArrayX
     }
 } // End of ArrayX class
 
-class program44
+class program17
 {
     public static void main(String A[])
     {

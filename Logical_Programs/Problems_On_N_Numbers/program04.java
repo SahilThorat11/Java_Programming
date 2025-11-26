@@ -1,8 +1,9 @@
-class program28
+
+class program04
 {
     public static void main(String A[])
     {
-        int Arr[] = {10,20,30,40};
+        int Arr[] = new int[4];
 
         System.out.println("Number of elements : "+Arr.length);
 

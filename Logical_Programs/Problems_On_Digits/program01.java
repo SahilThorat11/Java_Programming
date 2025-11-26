@@ -2,26 +2,24 @@ import java.util.*;
 
 class Digit
 {
-    public int SumDigits(int iNo)
+    public void DisplayDigits(int iNo)
     {
-        int iDigit = 0, iSum = 0;
+        int iDigit = 0;
 
         while(iNo != 0)
         {
             iDigit = iNo % 10;
-            iSum = iSum + iDigit;
+            System.out.println(iDigit);
             iNo = iNo / 10;
         }
-
-        return iSum;
     }
 }
 
-class program27
+class program01
 {
     public static void main(String A[])
     {
-        int iValue = 0, iRet = 0;
+        int iValue = 0;
 
         Scanner sobj = new Scanner(System.in);
 
@@ -29,9 +27,7 @@ class program27
         iValue = sobj.nextInt(); 
 
         Digit dobj = new Digit();
-        iRet = dobj.SumDigits(iValue);
-
-        System.out.println("Addition of Digits is : "+iRet);
+        dobj.DisplayDigits(iValue);
 
         // Important
         

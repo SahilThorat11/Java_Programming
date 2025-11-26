@@ -40,7 +40,7 @@ class ArrayX
     }
 }
 
-class program41
+class program14
 {
     public static void main(String A[])
     {

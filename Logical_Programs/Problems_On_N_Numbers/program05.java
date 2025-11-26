@@ -1,5 +1,5 @@
 
-class program32
+class program05
 {
     public static void main(String A[])
     {

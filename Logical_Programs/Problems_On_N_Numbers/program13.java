@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 class ArrayX
 {
-    private int Arr[];
-    private int iSize;
+    public int Arr[];
+    public int iSize;
 
     public ArrayX(int no)
     {
@@ -40,18 +40,11 @@ class ArrayX
     }
 }
 
-class program42
+class program13
 {
     public static void main(String A[])
     {
         ArrayX aobj1 = new ArrayX(5);
-        System.out.println(aobj1.iSize);              // Error
-
-        // Bad code(Need of access specifier)
-        aobj1.iSize = 11;                             // Error
-        aobj1.Arr = null;                             // Error
-
         ArrayX aobj2 = new ArrayX(7);
-        System.out.println(aobj2.iSize);              // Error
     }
 }

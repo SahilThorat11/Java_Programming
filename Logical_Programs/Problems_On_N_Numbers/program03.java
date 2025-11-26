@@ -11,7 +11,7 @@ class ArrayX
     }
 }
 
-class program30
+class program03
 {
     public static void main(String A[])
     {
