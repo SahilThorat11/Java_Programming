@@ -1,3 +1,10 @@
-#Logic_Building
+# Logic_Building_Progams :
 
-This file contains all logical Programs in java
+    This file contains all folders of Logic_Bulding topics.
+
+
+    Logical_Programs
+        |
+        |----->Problems_On_Digits
+        |
+        |----->Problems_On_Numbers
