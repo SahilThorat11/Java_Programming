@@ -8,3 +8,7 @@
         |----->Problems_On_Digits
         |
         |----->Problems_On_Numbers
+        |
+        |----->Problems_On_N_Numbers
+        |
+        |----->Problems_On_Pattern_Printing
