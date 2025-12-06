@@ -14,13 +14,13 @@ This folder contains all problems related to String handling in Java.
 
 These programs help you practice:
 
-✔️ String input and output
-✔️ Character-by-character traversal
-✔️ String → character array conversion
-✔️ Counting different types of characters
-✔️ ASCII–based operations
-✔️ String transformations (toggle, lowercase, replace, etc.)
-✔️ Building strong logical thinking in Java programming
+                ✔️ String input and output
+                ✔️ Character-by-character traversal
+                ✔️ String → character array conversion
+                ✔️ Counting different types of characters
+                ✔️ ASCII–based operations
+                ✔️ String transformations (toggle, lowercase, replace, etc.)
+                ✔️ Building strong logical thinking in Java programming
 
 -----
 
@@ -28,18 +28,18 @@ These programs help you practice:
 
 -----
 
-Java_Programming
-└── Logical_Programs
-    └── Problems_On_String
-        ├── program01.java
-        ├── program02.java
-        ├── program03.java
-        ├── program04.java
-        ├── program05.java
-                .
-                .
-                .
-        └── README.md
+                Java_Programming
+                └── Logical_Programs
+                └── Problems_On_String
+                        ├── program01.java
+                        ├── program02.java
+                        ├── program03.java
+                        ├── program04.java
+                        ├── program05.java
+                                .
+                                .
+                                .
+                        └── README.md
 
 ----
 
@@ -47,8 +47,8 @@ Java_Programming
 
 ----
 Compile:
-javac FileName.java
+                javac FileName.java
 
 Execute:
-java FileName
+                java FileName
 
