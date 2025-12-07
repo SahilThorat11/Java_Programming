@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Class Name     : Arithematic
+//  Description    : Contains method to perform integer division
+//  Author         : Sahil Rajaram Thorat
+//  Date           : 17/10/2025
+//
+////////////////////////////////////////////////////////////////////////////////
+
+class Arithematic
+{
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    //  Function Name : Divide
+    //  Description   : Performs division of two integers and returns the result
+    //  Input         : Integer (iNo1), Integer (iNo2)
+    //  Output        : Integer (Result of iNo1 / iNo2)
+    //
+    ////////////////////////////////////////////////////////////////////////////
+
+    int Divide(int iNo1, int iNo2)
+    {
+        int iAns = 0;
+
+        iAns = iNo1 / iNo2;
+
+        return iAns;
+
+    } // End of Divide
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Class Name     : Program1_1
+//  Description    : Entry point for the application
+//  Author         : Sahil Rajaram Thorat
+//  Date           : 17/10/2025
+//
+////////////////////////////////////////////////////////////////////////////////
+
+class program1_1
+{
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    //  Function Name : main
+    //  Description   : Entry point function which performs integer division
+    //
+    ////////////////////////////////////////////////////////////////////////////
+
+    public static void main(String A[])
+    {
+        int iValue1 = 15, iValue2 = 5, iRet = 0;  
+
+        Arithematic aobj = new Arithematic();  
+        
+        iRet = aobj.Divide(iValue1, iValue2);
+        
+        System.out.println("Division is : "+iRet);
+
+    } // End of main
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Testcases successfully handled by the application
+//
+//  Input  : 15   5
+//  Output : 3
+//
+////////////////////////////////////////////////////////////////////////////////
