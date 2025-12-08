@@ -13,7 +13,7 @@ class Arithematic
 
         for(iCnt = 1; iCnt <= iNo; iCnt++)
         {
-            System.out.print(iCnt * 2 + "\t");
+            System.out.print(iCnt * 2 + "\t");    
         }
     }
 }
