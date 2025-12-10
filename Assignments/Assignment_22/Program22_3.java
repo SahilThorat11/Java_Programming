@@ -67,5 +67,7 @@ class Program22_3
 
         aobj = null;
         sobj = null;
+
+        System.gc();
     }
 }
