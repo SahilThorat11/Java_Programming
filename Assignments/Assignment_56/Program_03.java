@@ -1,9 +1,9 @@
 import java.io.FileWriter;
 import java.util.Scanner;
 
-public class Program_03 
+class Program_03 
 {
-    public static void main(String[] args) throws Exception 
+    public static void main(String A[]) throws Exception 
     {
         Scanner sc = new Scanner(System.in);
 

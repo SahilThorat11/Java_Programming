@@ -1,9 +1,9 @@
 import java.io.File;
 import java.util.Scanner;
 
-public class Program_01 
+class Program_01 
 {
-    public static void main(String[] args) 
+    public static void main(String A[]) 
     {
         Scanner sc = new Scanner(System.in);
 

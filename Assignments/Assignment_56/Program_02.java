@@ -3,9 +3,9 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 import java.util.Scanner;
 
-public class Program_02 
+class Program_02 
 {
-    public static void main(String[] args) throws Exception 
+    public static void main(String A[]) throws Exception 
     {
         Scanner sc = new Scanner(System.in);
 
