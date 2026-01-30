@@ -24,7 +24,7 @@ class Program_03
             {
                 if(fArr[i].isDirectory())
                 {
-                    System.out.println("File Name : " + fArr[i].getName() + "\tFile Size : " + fArr[i].length() + "bytes");
+                    System.out.println("File Name : " + fArr[i].getName());
                 }
             }
         }
