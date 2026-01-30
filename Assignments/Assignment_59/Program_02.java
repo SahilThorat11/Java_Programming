@@ -5,9 +5,6 @@ class Program_02
 {
     public static void main(String A[]) throws Exception
     {
-        int iRet = 0;
-        byte Buffer[] = new byte[1024];
-
         Scanner sobj = new Scanner(System.in);
 
         System.out.print("Enter the name of Directory : ");
