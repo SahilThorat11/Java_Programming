@@ -22,7 +22,7 @@ class Program_01
 
             for(int i = 0; i < fArr.length; i++)
             {
-                System.out.println("File Name : " + fArr[i].getName() + "\tFile Size : " + fArr[i].length() + "bytes");
+                System.out.println("File Name : " + fArr[i].getName());
             }
         }
         else
