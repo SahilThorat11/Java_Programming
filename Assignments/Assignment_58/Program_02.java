@@ -1,34 +1,48 @@
-import java.io.File;
-import java.io.FileWriter;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class Program_02
- {
-    public static void main(String A[]) throws Exception
-     {
-        Scanner sobj = new Scanner(System.in);
+{
+    public static void main(String A[])
+    {
+        int i = 0;
+        Scanner sobj = null;
+        String dirName = null;
+        File fobj = null;
+        File fArr[] = null;
+        FileWriter fwobj = null;
 
-        System.out.print("Enter directory name: ");
-        String dirName = sobj.nextLine();
-
-        File dir = new File(dirName);
-        FileWriter fwobj = new FileWriter("Marvellous.txt");
-
-        if (dir.exists() && dir.isDirectory())
+        try
         {
-            File[] files = dir.listFiles();
+            sobj = new Scanner(System.in);
 
-            for (File file : files)
+            System.out.print("Enter directory name: ");
+            dirName = sobj.nextLine();
+
+            fobj = new File(dirName);
+
+            fwobj = new FileWriter("Marvellous.txt");
+
+            if (fobj.exists() && fobj.isDirectory()) 
             {
-                fwobj.write(file.getName() + "\n");
-            }
-            System.out.println("File names written to Marvellous.txt");
-        } 
-        else 
-        {
-            System.out.println("Invalid directory.");
-        }
+                fArr = fobj.listFiles();
 
-        fwobj.close();
+                for (i = 0; i < fArr.length; i++) 
+                {
+                    fwobj.write(fArr[i].getName() + "\n");
+                }
+                System.out.println("File names written to Marvellous.txt");
+            }
+            else 
+            {
+                System.out.println("Invalid directory.");
+            }
+
+            fwobj.close();
+        }
+        catch(Exception eobj)
+        {
+            System.out.println(eobj);
+        }
     }
 }
