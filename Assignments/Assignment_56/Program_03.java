@@ -1,23 +1,36 @@
-import java.io.FileWriter;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 class Program_03 
 {
-    public static void main(String A[]) throws Exception 
+    public static void main(String A[])
     {
-        Scanner sc = new Scanner(System.in);
+        Scanner sobj = null;
+        String FileName = null;
+        String data = null;
+        FileWriter fwobj = null;
 
-        System.out.print("Enter file name: ");
-        String fileName = sc.nextLine();
+        sobj = new Scanner(System.in);
 
-        FileWriter fw = new FileWriter(fileName, true); // true = append mode
+        try
+        {
+            System.out.print("Enter file name: ");
+            FileName = sobj.nextLine();
 
-        System.out.print("Enter data to write: ");
-        String data = sc.nextLine();
+            fwobj = new FileWriter(FileName, true); 
 
-        fw.write("\n" + data);
-        fw.close();
+            System.out.print("Enter data to write: ");
+            data = sobj.nextLine();
 
-        System.out.println("Data written successfully.");
+            fwobj.write(" " + data);
+
+            System.out.println("Data written successfully.");
+
+            fwobj.close();
+        }
+        catch (IOException e)
+        {
+            System.out.println(e);
+        }
     }
 }
