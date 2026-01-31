@@ -1,16 +1,19 @@
 import java.io.File;
 import java.util.Scanner;
 
-class Program_01 
+class Program_01
 {
     public static void main(String A[]) 
     {
-        Scanner sc = new Scanner(System.in);
+        Scanner sobj = null;
+        String FileName = null;
+
+        sobj = new Scanner(System.in);
 
         System.out.print("Enter file name: ");
-        String fileName = sc.nextLine();
+        FileName = sobj.nextLine();
 
-        File file = new File(fileName);
+        File file = new File(FileName);
 
         if (file.exists()) 
         {
