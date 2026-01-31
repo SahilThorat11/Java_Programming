@@ -10,12 +10,12 @@ class Program_01
 
         sobj = new Scanner(System.in);
 
-        System.out.print("Enter file name: ");
+        System.out.print("Enter fobj name: ");
         FileName = sobj.nextLine();
 
-        File file = new File(FileName);
+        File fobj = new File(FileName);
 
-        if (file.exists()) 
+        if (fobj.exists()) 
         {
             System.out.println("File opened successfully.");
         } 
