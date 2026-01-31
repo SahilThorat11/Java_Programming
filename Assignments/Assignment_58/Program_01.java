@@ -1,5 +1,5 @@
-import java.io.File;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class Program_01 
 {
