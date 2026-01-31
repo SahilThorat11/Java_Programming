@@ -3,22 +3,33 @@ import java.util.Scanner;
 
 class Program_04 
 {
-    public static void main(String A[]) throws Exception 
+    public static void main(String A[]) 
     {
-        Scanner sc = new Scanner(System.in);
+        Scanner sobj = null;
+        String FileName = null;
+        File file = null;
 
-        System.out.print("Enter file name: ");
-        String fileName = sc.nextLine();
+        sobj = new Scanner(System.in);
 
-        File file = new File(fileName);
-
-        if (file.createNewFile()) 
+        try
         {
-            System.out.println("File created successfully.");
-        } 
-        else
+            System.out.print("Enter file name: ");
+            FileName = sobj.nextLine();
+
+            file = new File(FileName);
+
+            if (file.createNewFile()) 
+            {
+                System.out.println("File created successfully.");
+            } 
+            else
+            {
+                System.out.println("File already exists.");
+            }
+        }
+        catch(Exception e)
         {
-            System.out.println("File already exists.");
+            System.out.println(e);
         }
     }
 }
