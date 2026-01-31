@@ -7,18 +7,18 @@ class Program_04
     {
         Scanner sobj = null;
         String FileName = null;
-        File file = null;
+        File fobj = null;
 
         sobj = new Scanner(System.in);
 
         try
         {
-            System.out.print("Enter file name: ");
+            System.out.print("Enter fobj name: ");
             FileName = sobj.nextLine();
 
-            file = new File(FileName);
+            fobj = new File(FileName);
 
-            if (file.createNewFile()) 
+            if (fobj.createNewFile()) 
             {
                 System.out.println("File created successfully.");
             } 
