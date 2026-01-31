@@ -5,14 +5,18 @@ class Program_02
 {
     public static void main(String A[]) 
     {
-        Scanner sobj = new Scanner(System.in);
+        Scanner sobj = null;
+        String fileName = null;
+        File fobj = null;
+
+        sobj = new Scanner(System.in);
 
         System.out.print("Enter file name: ");
-        String fileName = sobj.nextLine();
+        fileName = sobj.nextLine();
 
-        File file = new File(fileName);
+        fobj = new File(fileName);
 
-        if (file.exists() && file.isFile()) 
+        if (fobj.exists() && fobj.isFile()) 
         {
             System.out.println("It is a regular file.");
         } 
