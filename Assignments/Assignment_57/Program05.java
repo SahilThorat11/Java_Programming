@@ -1,29 +1,35 @@
-import java.io.File;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 class Program_05 
 {
     public static void main(String A[]) 
     {
-        Scanner sobj = new Scanner(System.in);
+        int i = 0;
+        Scanner sobj = null;
+        String dirName = null;
+        File fobj = null;
+        File fArr[] = null;
+
+        sobj = new Scanner(System.in);
 
         System.out.print("Enter directory name: ");
-        String dirName = sobj.nextLine();
+        dirName = sobj.nextLine();
 
-        File dir = new File(dirName);
+        fobj = new File(dirName);
 
-        if (dir.exists() && dir.isDirectory()) 
+        if (fobj.exists() && fobj.isDirectory()) 
         {
-            File[] files = dir.listFiles();
+            fArr = fobj.listFiles();
 
-            System.out.println("\nFile Name\t\tSize (bytes)");
+            System.out.println("\nFile Name\tSize (bytes)");
             System.out.println("---------------------------------");
 
-            for (File file : files) 
+            for(i = 0; i < fArr.length; i++)
             {
-                if (file.isFile()) 
+                if (fArr[i].isFile()) 
                 {
-                    System.out.println(file.getName() + "\t\t" + file.length());
+                    System.out.println(fArr[i].getName() + "\t\t" + fArr[i].length());
                 }
             }
         } 
