@@ -20,21 +20,36 @@ class Program_02
 
         File fobj = new File(Filename);
 
-        if (fobj.exists()) 
+        try
         {
-            frobj = new FileReader(fobj);
-            brobj = new BufferedReader(frobj);
-
-            System.out.println("File Contents:");
-            while ((line = brobj.readLine()) != null) 
+            if (fobj.exists()) 
             {
-                System.out.println(line);
+                frobj = new FileReader(fobj);
+                brobj = new BufferedReader(frobj);
+
+                System.out.println("File Contents:");
+                while ((line = brobj.readLine()) != null) 
+                {
+                    System.out.println(line);
+                }
+                brobj.close();
+            } 
+            else 
+            {
+                throw new FileNotFoundException("File does not exist: " + Filename);
             }
-            brobj.close();
-        } 
-        else 
+        }
+        catch (FileNotFoundException e)
         {
-            System.out.println("File does not exist.");
+            System.out.println(e.getMessage());
+        }
+        catch (IOException e)
+        {
+            System.out.println(e.getMessage());
+        }
+        finally
+        {
+            sobj.close();
         }
     }
 }
