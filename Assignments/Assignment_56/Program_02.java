@@ -1,30 +1,36 @@
-import java.io.File;
-import java.io.FileReader;
-import java.io.BufferedReader;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 class Program_02 
 {
     public static void main(String A[]) throws Exception 
     {
-        Scanner sc = new Scanner(System.in);
+        Scanner sobj = null;
+        
+        String Filename = null;
+        String line = null;
 
-        System.out.print("Enter file name: ");
-        String fileName = sc.nextLine();
+        FileReader frobj = null;
+        BufferedReader brobj = null;
 
-        File file = new File(fileName);
+        sobj = new Scanner(System.in);
 
-        if (file.exists()) 
+        System.out.print("Enter the name of file : ");
+        Filename = sobj.nextLine();
+
+        File fobj = new File(Filename);
+
+        if (fobj.exists()) 
         {
-            BufferedReader br = new BufferedReader(new FileReader(file));
-            String line;
+            frobj = new FileReader(fobj);
+            brobj = new BufferedReader(frobj);
 
-            System.out.println("\nFile Contents:");
-            while ((line = br.readLine()) != null) 
+            System.out.println("File Contents:");
+            while ((line = brobj.readLine()) != null) 
             {
                 System.out.println(line);
             }
-            br.close();
+            brobj.close();
         } 
         else 
         {
