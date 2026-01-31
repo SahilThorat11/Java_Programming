@@ -5,26 +5,31 @@ class Program_05
 {
     public static void main(String A[]) 
     {
-        Scanner sc = new Scanner(System.in);
+        int i = 0;
+        Scanner sobj = null;
+        String dirName = null;
+
+        File fobj = null;
+
+        sobj = new Scanner(System.in);
 
         System.out.print("Enter directory name: ");
-        String dirName = sc.nextLine();
+        dirName = sobj.nextLine();
 
-        File dir = new File(dirName);
+        fobj = new File(dirName);
 
-        if (dir.exists() && dir.isDirectory()) 
+        if (fobj.exists() && fobj.isDirectory()) 
         {
-            String[] files = dir.list();
+            File fArr[] = fobj.listFiles();
 
-            System.out.println("\nFiles in directory:");
-            for (String file : files) 
+            for(i = 0; i < fArr.length; i++)
             {
-                System.out.println(file);
+                System.out.println(fArr[i].getName());
             }
         } 
         else 
         {
-            System.out.println("Invalid directory.");
+            System.out.println("There is no such directory.");
         }
     }
 }
