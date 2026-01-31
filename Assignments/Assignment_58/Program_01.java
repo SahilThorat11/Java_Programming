@@ -5,23 +5,29 @@ public class Program_01
 {
     public static void main(String A[]) 
     {
-        Scanner sc = new Scanner(System.in);
+        int i = 0;
+        Scanner sobj = null;
+        String dirName = null;
+        File fobj = null;
+        File fArr[] = null;
+
+        sobj = new Scanner(System.in);
 
         System.out.print("Enter directory name: ");
-        String dirName = sc.nextLine();
+        dirName = sobj.nextLine();
 
-        File dir = new File(dirName);
+        fobj = new File(dirName);
 
-        if (dir.exists() && dir.isDirectory()) 
+        if (fobj.exists() && fobj.isDirectory()) 
         {
-            File[] files = dir.listFiles();
+            fArr = fobj.listFiles();
 
-            System.out.println("Regular files:");
-            for (File file : files) 
+            System.out.println("Regular files are :");
+            for (i = 0; i < fArr.length; i++) 
             {
-                if (file.isFile()) 
+                if (fArr[i].isFile()) 
                 {
-                    System.out.println(file.getName());
+                    System.out.println(fArr[i].getName());
                 }
             }
         }
