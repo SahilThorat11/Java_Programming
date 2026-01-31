@@ -35,7 +35,7 @@ public class Program_02
             }
             else 
             {
-                System.out.println("Invalid directory.");
+                System.out.println("Invalid directory or There is no such directory.");
             }
 
             fwobj.close();
