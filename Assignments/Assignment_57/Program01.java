@@ -4,28 +4,44 @@ import java.util.Scanner;
 
 class Program_01 
 {
-    public static void main(String A[]) throws Exception 
+    public static void main(String A[])
     {
-        Scanner sobj = new Scanner(System.in);
+        int iRet = 0;
 
-        System.out.print("Enter source file name: ");
-        String source = sobj.nextLine();
+        Scanner sobj = null;
 
-        System.out.print("Enter destination file name: ");
-        String destination = sobj.nextLine();
+        String source = null;
+        String destination = null;
 
-        FileReader frobj = new FileReader(source);
-        FileWriter fwobj = new FileWriter(destination);
+        FileReader frobj = null;
+        FileWriter fwobj = null;
 
-        int ch;
-        while ((ch = frobj.read()) != -1) 
+        sobj = new Scanner(System.in);
+
+        try
         {
-            fwobj.write(ch);
+            System.out.print("Enter source file name: ");
+            source = sobj.nextLine();
+
+            System.out.print("Enter destination file name: ");
+            destination = sobj.nextLine();
+
+            frobj = new FileReader(source);
+            fwobj = new FileWriter(destination);
+
+            while ((iRet = frobj.read()) != -1) 
+            {
+                fwobj.write(iRet);
+            }
+
+            frobj.close();
+            fwobj.close();
+
+            System.out.println("File copied successfully.");
         }
-
-        frobj.close();
-        fwobj.close();
-
-        System.out.println("File copied successfully.");
+        catch(Exception e)
+        {
+            System.out.println(e);
+        }  
     }
 }
