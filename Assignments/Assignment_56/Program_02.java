@@ -10,6 +10,8 @@ class Program_02
         String Filename = null;
         String line = null;
 
+        File fobj = null;
+
         FileReader frobj = null;
         BufferedReader brobj = null;
 
@@ -18,7 +20,7 @@ class Program_02
         System.out.print("Enter the name of file : ");
         Filename = sobj.nextLine();
 
-        File fobj = new File(Filename);
+        fobj = new File(Filename);
 
         try
         {
