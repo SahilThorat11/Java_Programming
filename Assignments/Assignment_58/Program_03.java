@@ -3,41 +3,56 @@ import java.util.Scanner;
 
 public class Program_03
  {
-    public static void main(String A[]) throws Exception 
+    public static void main(String A[]) 
     {
-        Scanner sobj = new Scanner(System.in);
+        int iRet = 0;
+        int i = 0;
+        Scanner sobj = null;
+        String dirName = null;
+        File fobj = null;
+        File fArr[] = null;
+        FileWriter fwobj = null;
+        FileReader frobj = null;
 
-        System.out.print("Enter directory name: ");
-        String dirName = sobj.nextLine();
-
-        File dir = new File(dirName);
-        FileWriter fwobj = new FileWriter("Marvellous.txt");
-
-        if (dir.exists() && dir.isDirectory()) 
+        try
         {
-            File[] files = dir.listFiles();
+            sobj = new Scanner(System.in);
 
-            for (File file : files) 
+            System.out.print("Enter directory name: ");
+            dirName = sobj.nextLine();
+
+            fobj = new File(dirName);
+            fwobj = new FileWriter("Marvellous.txt");
+
+            if (fobj.exists() && fobj.isDirectory()) 
             {
-                if (file.isFile()) 
-                {
-                    FileReader frobj = new FileReader(file);
-                    int ch;
-                    while ((ch = frobj.read()) != -1) 
-                    {
-                        fwobj.write(ch);
-                    }
-                    fwobj.write("\n");
-                    frobj.close();
-                }
-            }
-            System.out.println("All file data written to Marvellous.txt");
-        } 
-        else 
-        {
-            System.out.println("Invalid directory.");
-        }
+                fArr = fobj.listFiles();
 
-        fwobj.close();
+                for (i = 0; i < fArr.length; i++) 
+                {
+                    if (fArr[i].isFile()) 
+                    {
+                        frobj = new FileReader(fArr[i]);
+                        
+                        while ((iRet = frobj.read()) != -1) 
+                        {
+                            fwobj.write(iRet);
+                        }
+                        frobj.close();
+                    }
+                }
+                System.out.println("All file data written to Marvellous.txt");
+            } 
+            else 
+            {
+                System.out.println("Invalid directory.");
+            }
+
+            fwobj.close();
+        }
+        catch(Exception eobj)
+        {
+            System.out.println(eobj);
+        }
     }
 }
