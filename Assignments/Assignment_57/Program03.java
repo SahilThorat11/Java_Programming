@@ -5,14 +5,18 @@ class Program_03
 {
     public static void main(String A[]) 
     {
-        Scanner sobj = new Scanner(System.in);
+        Scanner sobj = null;
+        String dirName = null;
+        File fobj = null;
+
+        sobj = new Scanner(System.in);
 
         System.out.print("Enter directory name: ");
-        String dirName = sobj.nextLine();
+        dirName = sobj.nextLine();
 
-        File dir = new File(dirName);
+        fobj = new File(dirName);
 
-        if (dir.mkdir()) 
+        if (fobj.mkdir()) 
         {
             System.out.println("Directory created successfully.");
         } 
