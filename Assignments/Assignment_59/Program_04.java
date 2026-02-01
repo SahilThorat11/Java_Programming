@@ -1,24 +1,31 @@
 import java.io.*;
 import java.util.*;
 
-class Program_03
+class Program_04
 {
     public static void main(String A[]) throws Exception
     {
-        int iCountFolder = 0, iCountFiles = 0;;
+        int iCountFolder = 0;
+        int iCountFiles = 0;
+        Scanner sobj = null;
+        String DirName = null;
+        File fobj = null;
+        File fArr[] = null;
 
-        Scanner sobj = new Scanner(System.in);
+        sobj = new Scanner(System.in);
 
         System.out.print("Enter the name of Directory : ");
-        String DirectoryName = sobj.nextLine();
+        DirName = sobj.nextLine();
 
-        File fobj = new File(DirectoryName);
+        fobj = new File(DirName);
 
         if((fobj.exists()) && (fobj.isDirectory()))
         {
             System.out.println("Directory is present.");
 
-            File fArr[] = fobj.listFiles();
+            fArr = fobj.listFiles();
+
+            System.out.println("Number of files in the Directorys are : " + fArr.length);
 
             for(int i = 0; i < fArr.length; i++)
             {
