@@ -1,46 +1,65 @@
 import java.io.*;
-import java.util.Scanner;
+import java.util.*;
 
-public class Program_05 
-{
-    public static void main(String A[]) throws Exception 
+public class Program_04
+ {
+    public static void main(String A[])
     {
-        Scanner sobj = new Scanner(System.in);
+        int iRet = 0;
+        int i = 0;
 
-        System.out.print("Enter directory name: ");
-        String dirName = sobj.nextLine();
+        Scanner sobj = null;
+        String dirName = null;
 
-        File dir = new File(dirName);
-        FileWriter fwobj = new FileWriter("Marvellous.txt");
+        File fobj = null;
+        File fArr[] =null;
 
-        if (dir.exists() && dir.isDirectory()) 
+        FileWriter fwobj = null; 
+        FileReader frobj = null;
+        
+        try
         {
-            File[] files = dir.listFiles();
+            sobj = new Scanner(System.in);
 
-            for (File file : files) 
+            System.out.print("Enter directory name: ");
+            dirName = sobj.nextLine();
+
+            fobj = new File(dirName);
+            fwobj = new FileWriter("Marvellous.txt");
+
+            if (fobj.exists() && fobj.isDirectory()) 
             {
-                if (file.isFile()) 
+                fArr = fobj.listFiles();
+
+                for(i = 0; i < fArr.length; i++) 
                 {
-                    fwobj.write("File Name: " + file.getName() + "\n");
-                    fwobj.write("File Size: " + file.length() + " bytes\n");
-
-                    FileReader frobj = new FileReader(file);
-                    int ch;
-                    while ((ch = frobj.read()) != -1) 
+                    if (fArr[i].isFile()) 
                     {
-                        fwobj.write(ch);
-                    }
-                    fwobj.write("\n----------------------------------\n");
-                    frobj.close();
-                }
-            }
-            System.out.println("File name, size and data written successfully.");
-        } 
-        else 
-        {
-            System.out.println("Invalid directory.");
-        }
+                        fwobj.write("File Name: " + fArr[i].getName() + "\n");
+                        fwobj.write("File Size: " + fArr[i].length() + "\n");
 
-        fwobj.close();
+                        frobj = new FileReader(fArr[i]);
+                    
+                        while ((iRet = frobj.read()) != -1) 
+                        {
+                            fwobj.write(iRet);
+                        }
+                        fwobj.write("\n\n");
+                        frobj.close();
+                    }
+                }
+                System.out.println("File name and data written successfully.");
+            } 
+            else 
+            {
+                System.out.println("Invalid directory.");
+            }
+
+            fwobj.close();
+        }
+        catch(Exception eobj)
+        {
+
+        }
     }
 }
