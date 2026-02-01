@@ -1,33 +1,45 @@
 import java.io.*;
-import java.util.Scanner;
+import java.util.*;
 
 public class Program_04
  {
     public static void main(String A[]) throws Exception 
     {
-        Scanner sobj = new Scanner(System.in);
+        int iRet = 0;
+        int i = 0;
+
+        Scanner sobj = null;
+        String dirName = null;
+
+        File fobj = null;
+        File fArr[] =null;
+
+        FileWriter fwobj = null; 
+        FileReader frobj = null;
+        
+        sobj = new Scanner(System.in);
 
         System.out.print("Enter directory name: ");
-        String dirName = sobj.nextLine();
+        dirName = sobj.nextLine();
 
-        File dir = new File(dirName);
-        FileWriter fwobj = new FileWriter("Marvellous.txt");
+        fobj = new File(dirName);
+        fwobj = new FileWriter("Marvellous.txt");
 
-        if (dir.exists() && dir.isDirectory()) 
+        if (fobj.exists() && fobj.isDirectory()) 
         {
-            File[] files = dir.listFiles();
+            fArr = fobj.listFiles();
 
-            for (File file : files) 
+            for(i = 0; i < fArr.length; i++) 
             {
-                if (file.isFile()) 
+                if (fArr[i].isFile()) 
                 {
-                    fwobj.write("File Name: " + file.getName() + "\n");
+                    fwobj.write("File Name: " + fArr[i].getName() + "\n");
 
-                    FileReader frobj = new FileReader(file);
-                    int ch;
-                    while ((ch = frobj.read()) != -1) 
+                    frobj = new FileReader(fArr[i]);
+                   
+                    while ((iRet = frobj.read()) != -1) 
                     {
-                        fwobj.write(ch);
+                        fwobj.write(iRet);
                     }
                     fwobj.write("\n\n");
                     frobj.close();
