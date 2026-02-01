@@ -5,31 +5,41 @@ class Program_05
 {
     public static void main(String A[]) throws Exception
     {
-        Scanner sobj = new Scanner(System.in);
+        Scanner sobj = null;
+        String DirName = null;
+        File fobj = null;
+        File fArr[] = null;
 
-        System.out.print("Enter the name of Directory : ");
-        String DirectoryName = sobj.nextLine();
-
-        File fobj = new File(DirectoryName);
-
-        if((fobj.exists()) && (fobj.isDirectory()))
+        try 
         {
-            System.out.println("Directory is present.");
+            sobj = new Scanner(System.in);
 
-            File fArr[] = fobj.listFiles();
+            System.out.print("Enter the name of Directory : ");
+            DirName = sobj.nextLine();
 
-            System.out.println("Number of files in the Directorys are : " + fArr.length);
+            fobj = new File(DirName);
 
-            for(int i = 0; i < fArr.length; i++)
+            if((fobj.exists()) && (fobj.isDirectory()))
             {
-                System.out.println("File Name : " + fArr[i].getName() + "\tFile Path : " + fArr[i].getAbsolutePath());
+                System.out.println("Directory is present.");
+
+                fArr = fobj.listFiles();
+
+                System.out.println("Number of files in the Directorys are : " + fArr.length);
+
+                for(int i = 0; i < fArr.length; i++)
+                {
+                    System.out.println("File Name : " + fArr[i].getName() + "\tFile Path : " + fArr[i].getAbsolutePath());
+                }
             }
+            else
+            {
+                System.out.println("There is no such Directory.");
+            }
+            
+            sobj.close();
         }
-        else
-        {
-            System.out.println("There is no such Directory.");
-        }
-        
-        sobj.close();
+        catch(Exception eobj)
+        {}
     }
 }
