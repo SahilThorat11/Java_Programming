@@ -4,9 +4,7 @@ class Program_01
 {
     public static void main(String A[])
     {
-        int iNo = 0;
-        int iCount = 0;
-        int iMask = 0x00000001;
+        int iNo = 0, iCount = 0, iMask = 0x00000001;
 
         Scanner sobj = new Scanner(System.in);
 
