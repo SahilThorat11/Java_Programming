@@ -18,7 +18,7 @@ class Program_01
                 iCount++;
             }
 
-            iNo = iNo >> iMask;
+            iNo = iNo >> 1;
         }
 
         System.out.println("Number of 1's from given number are : " + iCount);
