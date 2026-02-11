@@ -1,0 +1,12 @@
+File Name: Demo.txt
+File Size: 0
+
+
+File Name: Hello.txt
+File Size: 14
+Jay Ganesh...!
+
+File Name: New.txt
+File Size: 14
+Jay Ganesh...!
+
