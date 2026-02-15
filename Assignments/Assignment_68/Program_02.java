@@ -1,41 +1,24 @@
-import java.util.Scanner;
-
-class Printer 
+class Printing
 {
-    private int iNo;   
-    private int iCnt; 
+    static int iCnt = 1;  
 
-    public Printer() 
+    public static void Display() 
     {
-        this.iNo = 0;
-        this.iCnt = 1;      
-    }
-
-    public void getInput()
-    {
-        Scanner sobj = new Scanner(System.in);
-        System.out.print("Enter number of times you want to print: ");
-        this.iNo = sobj.nextInt();  
-    }
-
-    public void display() 
-    {
-        if (iCnt <= iNo) 
+        if (iCnt <= 5) 
         {
             System.out.print(iCnt + "\t");
-            iCnt++;        
-            display();     
+            iCnt++;
+            Display();  
         }
     }
+
 }
 
-public class Program_02
+class Program_02
 {
-    public static void main(String[] args)
+    public static void main(String[] args) 
     {
-        Printer pobj = new Printer();  
-        
-        pobj.getInput();   
-        pobj.display();                          
+        Printing pobj = new Printing();
+        pobj.Display();
     }
 }
