@@ -1,42 +1,26 @@
-import java.util.Scanner;
-
-class Printer 
+class Printing
 {
-    private int iNo;     
-    private char ch;    
+    static int iCnt = 0;  
+    static char ch = 'A';  
 
-    public Printer() 
+    public static void Display() 
     {
-        this.iNo = 0;
-        this.ch = 'A';   
-    }
-
-    public void getInput()
-    {
-        Scanner sobj = new Scanner(System.in);
-        System.out.print("Enter number of characters to print: ");
-        this.iNo = sobj.nextInt();
-    }
-
-    public void display() 
-    {
-        if(iNo > 0)
+        if (iCnt < 6) 
         {
             System.out.print(ch + "\t");
-            ch++;       
-            iNo--;       
-            display();   
+            ch++;
+            iCnt++;
+            Display();  
         }
     }
+
 }
 
-public class Program_04
+class Program_04
 {
-    public static void main(String[] args)
+    public static void main(String[] args) 
     {
-        Printer pobj = new Printer();
-        
-        pobj.getInput();   
-        pobj.display();                             
+        Printing pobj = new Printing();
+        pobj.Display();
     }
 }
