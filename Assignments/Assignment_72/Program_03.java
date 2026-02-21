@@ -52,36 +52,39 @@ class Matrix
     public int MaxDiagonal()
     {
         int i = 0, j = 0;
-        int iLarge1 = 0, iLarge2 = 0;
+        int iLarge1 = Arr[0][0];     
+        int iLarge2 = Arr[0][iCol-1];
 
         for(i = 0; i < iRow; i++)
         {
             for(j = 0; j < iCol; j++)
             {
-                if( i == j && Arr[i][j] > iLarge1)
+                if(i == j)
                 {
-                    iLarge1 = Arr[i][j];
+                    if(Arr[i][j] > iLarge1)
+                    {
+                        iLarge1 = Arr[i][j];
+                    }
                 }
-            }
 
-            for(j = iCol; j > 0; j--)
-            {
-                if( i == j && Arr[i][j] > iLarge2)
+                if(i + j == iCol - 1)
                 {
-                    iLarge2 = Arr[i][j];
+                    if(Arr[i][j] > iLarge2)
+                    {
+                        iLarge2 = Arr[i][j];
+                    }
                 }
             }
         }
 
         if(iLarge1 > iLarge2)
         {
-            return iLarge1
+            return iLarge1;
         }
-        else 
-        {
-            return iLarge2;
-        }
+
+        return iLarge2;
     }
+
 }
 
 class Program_03
