@@ -31,8 +31,6 @@ class Matrix
                 Arr[i][j] = sobj.nextInt();
             }
         }
-    
-        sobj.close();
     }
 
     public void Display()
@@ -93,5 +91,7 @@ class Program_01
         System.out.println("Sumation of Diagonal elements : "+mobj.SumDiagonal());
     
         mobj.SumDiagonal();
+
+        sobj.close();
     }
 }
