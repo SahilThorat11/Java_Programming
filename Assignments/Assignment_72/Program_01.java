@@ -76,7 +76,16 @@ class Program_01
 {
     public static void main(String A[])
     {
-        Matrix mobj = new Matrix(4,4);
+        int iRow = 0, iCol = 0;
+        Scanner sobj = new Scanner(System.in);
+
+        System.out.println("Enter the number of Rows : ");
+        iRow = sobj.nextInt();
+
+        System.out.println("Enter the number of Columns : ");
+        iCol = sobj.nextInt();
+
+        Matrix mobj = new Matrix(iRow,iCol);
 
         mobj.Accept();
         mobj.Display();
