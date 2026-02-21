@@ -54,7 +54,7 @@ class Matrix
         int i = 0, j = 0;
         int temp = 0;
 
-        for(i = 0; i < iRow - 1; i += 2)
+        for(i = 0; i < iRow - 1; i = i + 2)
         {
             for(j = 0; j < iCol; j++)
             {
