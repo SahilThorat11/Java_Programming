@@ -49,27 +49,42 @@ class Matrix
         }
     }
 
-    public int SumDiagonal()
+    public int MaxDiagonal()
     {
         int i = 0, j = 0;
-        int iSum = 0;
+        int iLarge1 = 0, iLarge2 = 0;
 
         for(i = 0; i < iRow; i++)
         {
             for(j = 0; j < iCol; j++)
             {
-                if( i == j)
+                if( i == j && Arr[i][j] > iLarge1)
                 {
-                    iSum = iSum + Arr[i][j];
-                }       
+                    iLarge1 = Arr[i][j];
+                }
+            }
+
+            for(j = iCol; j > 0; j--)
+            {
+                if( i == j && Arr[i][j] > iLarge2)
+                {
+                    iLarge2 = Arr[i][j];
+                }
             }
         }
 
-        return iSum;
+        if(iLarge1 > iLarge2)
+        {
+            return iLarge1
+        }
+        else 
+        {
+            return iLarge2;
+        }
     }
 }
 
-class Program_01
+class Program_03
 {
     public static void main(String A[])
     {
@@ -87,7 +102,7 @@ class Program_01
         mobj.Accept();
         mobj.Display();
 
-        System.out.println("Sumation of Diagonal elements : " + mobj.SumDiagonal());
+        System.out.println("Largest number from both diagonal is : "+mobj.MaxDiagonal());
 
         sobj.close();
     }
