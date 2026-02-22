@@ -51,11 +51,11 @@ class Matrix
 
     public void ReverseRow()
     {
-        int temp;
+        int i = 0, j = 0, temp = 0;
 
-        for(int i = 0; i < iRow; i++)
+        for(i = 0; i < iRow; i++)
         {
-            for(int j = 0; j < iCol / 2; j++)
+            for(j = 0; j < iCol / 2; j++)
             {
                 temp = Arr[i][j];
                 Arr[i][j] = Arr[i][iCol - 1 - j];
@@ -86,7 +86,6 @@ class Program_02
         mobj.ReverseRow();
 
         System.out.println("Matrix after reversing rows : ");
-
         mobj.Display();
 
         sobj.close();
