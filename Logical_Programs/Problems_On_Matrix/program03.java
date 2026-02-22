@@ -53,7 +53,7 @@ class Matrix
     }
 }
 
-class Program789
+class Program03
 {
     public static void main(String A[])
     {
