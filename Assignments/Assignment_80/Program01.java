@@ -40,7 +40,7 @@ class Program01
             }
         }
 
-        int Weekly[] = new int[7];
+        int Weekly[] = new int[N]; 
 
         int HighestCity = 0;
         int MaxWeekly = 0;
@@ -68,7 +68,7 @@ class Program01
             }
         }
 
-        System.out.println("Highest Consumption : City "+HighestCity);
+        System.out.println("Highest Consumption City : "+(HighestCity + 1));
         System.out.println("Highest Consumption : "+MaxWeekly);
 
         int DaySum = 0;
