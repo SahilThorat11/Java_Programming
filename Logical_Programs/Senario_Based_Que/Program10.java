@@ -16,7 +16,7 @@ class Program10
         dp[0] = 0;
         dp[1] = 1;
 
-        int i = 0;
+        int i = 0;    
 
         for(i = 2; i <= Size; i++)
         {
