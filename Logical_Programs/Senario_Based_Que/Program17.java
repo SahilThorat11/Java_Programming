@@ -24,7 +24,7 @@ class Program17
 
         int i = 0, j = 0;
 
-        for(i = 0; i < R; i++)
+        for(i = 0; i < R; i++)   
         {
             System.out.println("Enter details of Row : " + (i + 1));
 
