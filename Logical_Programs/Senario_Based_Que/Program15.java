@@ -22,7 +22,7 @@ class Program15
 
         System.out.println("Enter Booking details : [0 / 1]");
 
-        int i = 0, j = 0;
+        int i = 0, j = 0;    
 
         for(i = 0; i < R; i++)
         {
