@@ -16,7 +16,7 @@ class Program12
         }
 
         int Arr[][] = new int[N][7];
-        int i = 0, j = 0, No = 0;
+        int i = 0, j = 0, No = 0;   
 
         System.out.println("Enter the electricity consumption of each city : ");
 
