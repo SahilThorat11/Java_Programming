@@ -21,7 +21,7 @@ class Program09
 
         int i = 0;
 
-        for(i = 2; i <= Size; i++)
+        for (i = 2; i <= Size; i++)
         {
             dp[i] = dp[i - 1] + dp[i - 2];
             System.out.print(dp[i] + "\t");
