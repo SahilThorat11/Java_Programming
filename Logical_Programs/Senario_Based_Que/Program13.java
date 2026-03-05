@@ -21,7 +21,7 @@ class Program13
         System.out.println("Enter the electricity consumption of each city : ");
 
         for(i = 0; i < N; i++)
-        {
+        {    
             System.out.println("Enter consumption of city : " + (i + 1));
             for(j = 0; j < 7; j++)
             {
