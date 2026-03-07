@@ -22,11 +22,11 @@ class Program17
 
         if(iTemp == iRev)
         {
-            System.out.println(iTemp + " is Palindrome number");
+            System.out.println(iTemp + " is Palindrome number.");
         }
         else
         {
-            System.out.println(iTemp + " is Not a Palindrome number");
+            System.out.println(iTemp + " is Not a Palindrome number.");
         }
 
         sobj.close();
