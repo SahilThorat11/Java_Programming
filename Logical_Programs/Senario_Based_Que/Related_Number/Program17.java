@@ -20,7 +20,7 @@ class Program17
             iNo = iNo / 10;
         }
 
-        if(iTemp == iRev)
+        if (iTemp == iRev)
         {
             System.out.println(iTemp + " is Palindrome number.");
         }
