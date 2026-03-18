@@ -23,7 +23,7 @@ class Program30
            sb = new StringBuffer(Arr[i]);
            sb.reverse();
            finalstr.append(sb);
-        finalstr.append(" ");
+           finalstr.append(" ");
         }
 
         System.out.println(finalstr);
