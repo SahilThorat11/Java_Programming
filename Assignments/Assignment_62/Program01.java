@@ -8,11 +8,11 @@ class Program01
         Scanner sobj = new Scanner(System.in);
 
         System.out.print("Enter file name : ");
-        String FileName = sobj.nextLine();
+        String FileName = sobj.nextLine();   
 
         FileInputStream fiobj = new FileInputStream(FileName);
 
-        int iRet = 0;
+        int iRet = 0;                 
         int Count = 0;
 
         while((iRet = fiobj.read()) != -1)
