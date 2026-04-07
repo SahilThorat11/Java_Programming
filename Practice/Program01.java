@@ -21,14 +21,14 @@ class Program01
         // Handle negative power
         else if (y < 0)
         {
-            double result = 1.0;
-            
+            double dresult = 1.0;
+
             for (i = 1; i <= -y; i++)
             {
-                result = result * x;
+                dresult = dresult * x;
             }
         
-            System.out.println("Result : " + (1.0 / result));
+            System.out.println("Result : " + (1.0 / dresult));
         }
         else
         {
