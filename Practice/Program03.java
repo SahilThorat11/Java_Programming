@@ -4,7 +4,7 @@ class Solution
 {
     public int SubStringLength(String str) 
     {
-        int[] lastIndex = new int[256];
+        int lastIndex[] = new int[256];
         
         // Initialize all values to -1
         Arrays.fill(lastIndex, -1);
@@ -35,7 +35,7 @@ class Solution
 
 public class Program03 {
     
-    public static void main(String[] args) {
+    public static void main(String A[]) {
         Scanner sobj = new Scanner(System.in);
         
         System.out.print("Enter a string: ");
