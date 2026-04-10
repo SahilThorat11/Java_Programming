@@ -28,7 +28,7 @@ class Solution
 
 public class Program04 
 {    
-    public static void main(String[] args)
+    public static void main(String[] A[])
     {
         Scanner sobj = new Scanner(System.in);
         
