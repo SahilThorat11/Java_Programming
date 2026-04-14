@@ -26,7 +26,7 @@ class Duplicate
             }
         }
 
-        if(!found)
+        if(found == false)
         {
             System.out.println("No duplicate characters found.");
         }
