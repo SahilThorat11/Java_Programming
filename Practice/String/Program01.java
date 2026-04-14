@@ -25,9 +25,9 @@ class Program01
         System.out.print("Enter a string: ");
         String input = sobj.nextLine();
 
-        String reversed = ReverseUtil.reverse(input);
+        String revstring = ReverseUtil.reverse(input);
 
-        System.out.println("Reversed String: " + reversed);
+        System.out.println("Reversed String: " + revstring);
 
         sobj.close();
     }
