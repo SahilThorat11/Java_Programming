@@ -30,7 +30,7 @@ public class Program02
 
         boolean result = Palindrome.isPalindrome(input);
 
-        if(result) 
+        if(result == true) 
         {
             System.out.println("The string is a palindrome.");
         }
