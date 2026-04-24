@@ -23,5 +23,7 @@ class Program19
         {
             System.out.println(Arr[i]);
         }
+
+        sobj.close();
     }
 }
