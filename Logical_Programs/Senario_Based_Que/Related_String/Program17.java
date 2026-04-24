@@ -23,5 +23,7 @@ class Program17
         {
             System.out.println(s);
         }
+
+        sobj.close();
     }
 }
