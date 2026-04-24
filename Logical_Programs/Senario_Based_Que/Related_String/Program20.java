@@ -23,5 +23,7 @@ class Program20
         {
             System.out.println(Arr[i] + " : " + Arr[i].length());
         }
+
+        sobj.close();
     }
 }
