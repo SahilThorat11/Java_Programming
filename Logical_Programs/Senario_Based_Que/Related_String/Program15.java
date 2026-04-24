@@ -19,5 +19,7 @@ class Program15
         String Arr[] = str.split(" ");
 
         System.out.println("Number of words : "+Arr.length);
+
+        sobj.close();
     }
 }
