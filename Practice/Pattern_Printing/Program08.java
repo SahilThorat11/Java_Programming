@@ -2,11 +2,11 @@
     iRow : 5
     iCol : 5
 
-    *   *   *   *   *
-        *   *   *   *
-            *   *   *
-                *   *
-                    *
+    *       *       *       *       *
+    *       *       *       *
+    *       *       *
+    *       *
+    *
 */
 
 import java.util.Scanner;
@@ -19,9 +19,9 @@ class Pattern
 
         for(i = 1; i <= iRow; i++)
         {
-            for(j = 1; j <= iCol; j++)
+            for(j = iCol; j >= 1; j--)
             {
-                if(i <= j)
+                if(j >= i)
                 {
                     System.out.print("*\t");
                 }
@@ -35,7 +35,7 @@ class Pattern
     }
 }
 
-class Program06
+class Program08
 {
     public static void main(String A[])
     {
