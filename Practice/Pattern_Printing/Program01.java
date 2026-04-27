@@ -2,10 +2,10 @@
     iRow : 4
     iCol : 4
 
-    *   *   *   *
-    *   *   *   *
-    *   *   *   *
-    *   *   *   *
+    *       *       *       *
+    *       *       *       *
+    *       *       *       *
+    *       *       *       *
 */
 
 import java.util.Scanner;
