@@ -3,9 +3,9 @@
     iCol : 6
 
     *       *       *       *       *
-    *       $       $       $       *
-    *       $       $       $       *
-    *       $       $       $       *
+    $       $       $       $       $
+    $       $       $       $       $
+    $       $       $       $       $
     *       *       *       *       *
 
 */
@@ -36,7 +36,7 @@ class Pattern
     }
 }
 
-class Program13
+class Program14
 {
     public static void main(String A[])
     {
