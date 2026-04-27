@@ -29,7 +29,7 @@ public class Program06
 
         if(isPrime == true)
         {
-            System.out.println(iNo + "  is Prime number");
+            System.out.println(iNo + " is Prime number");
         }
         else
         {
