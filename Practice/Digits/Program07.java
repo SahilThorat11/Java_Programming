@@ -47,7 +47,7 @@ class Program07
 
         int iRet = dobj.MinDigit(iNo);
 
-        System.out.println("Smallest digit is : " + iRet);
+        System.out.println("Smallest digit from given number is : " + iRet);
 
         sobj.close();
     }
