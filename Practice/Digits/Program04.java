@@ -4,12 +4,7 @@ import java.util.Scanner;
 class Digits
 {
     public int SumDigits(int iNo)
-    {
-        if(iNo == 0)
-        {
-            return 1;
-        }
-        
+    {    
         int iSum = 0;
         int iDigit = 0;
 
