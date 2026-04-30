@@ -5,6 +5,11 @@ class Digits
 {
     public int CountDigits(int iNo)
     {
+        if(iNo == 0)
+        {
+            return 1;
+        }
+        
         int iCount = 0;
 
         while(iNo != 0)
