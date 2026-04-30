@@ -9,7 +9,12 @@ class Digits
         {
             return 1;
         }
-        
+
+        if(iNo < 0)
+        {
+            iNo = -iNo;
+        }
+
         int iCount = 0;
 
         while(iNo != 0)
