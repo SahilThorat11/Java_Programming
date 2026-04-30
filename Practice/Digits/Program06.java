@@ -41,7 +41,7 @@ class Program06
 
         int iRet = dobj.MaxDigit(iNo);
 
-        System.out.println("Largest digit is : " + iRet);
+        System.out.println("Largest digit from given nummber is : " + iRet);
 
         sobj.close();
     }
